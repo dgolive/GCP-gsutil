@@ -3,13 +3,13 @@ is the command line tool used to manage buckets and objects on Google Storage.
 
 Basic commands:
 List all buckets and files
-gsutil ls, gsutil ls -lh gs://<bucket-name>
+gsutil ls, gsutil ls -lh gs://bucket-name
 
 Download file	
-  gsutil cp gs://<bucket-name>/<dir-path>/package-1.1.tgz .
+  gsutil cp gs://bucket-name/dir-path/package-1.1.tgz .
 
 Upload file
-  gsutil cp <filename> gs://<bucket-name>/<directory>/
+  gsutil cp filename gs://bucket-name/directory/
 
 Cat file
   gsutil cat gs://<bucket-name>/<filepath>/
