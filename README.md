@@ -1,7 +1,7 @@
 # GSUTIL - Google Cloud Storage CLI
 Is the command line tool used to manage buckets and objects on Google Storage. 
 
-Basic commands:
+
 ***Create bucket*** ~$ gsutil mb gs://bucket-name
 
 ***List all buckets and files*** ~$ gsutil ls, gsutil ls -lh gs://bucket-name
