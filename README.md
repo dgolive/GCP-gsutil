@@ -25,21 +25,26 @@ Is the command line tool used to manage buckets and objects on Google Storage.
 ***Gsutil help*** ~$ gsutil help, gsutil help cp, gsutil help options
 
 
-***Creating a regional cloud storage + storage Type*** 
-gsutil mb -l southamerica-east1 -c nearline gs://bucketname
+***Creating a regional cloud storage + storage Type***  ~$ gsutil mb -l southamerica-east1 -c nearline gs://bucketname
+
 
 ***Uniform Bucket-Level Access - Enabling*** ~$ gsutil mb -b on gs://bucket-with-no-acls
+
 ***Uniform Bucket-Level Access - Disabling***   $ gsutil mb -b off gs://bucket-with-acls
 
+
 ***Bucket versioning - Enabling*** ~$ gsutil versioning set on gs://bucketname
+
 ***Bucket versioning - Disabling***  $ gsutil versioning set off gs://bucketname
 
 
 ***Signed URLs***  $ gsutil signurl -d 10m -m GET /ath/private_key.json  gs://bucketname/filename
+
 ***Signed URLs access for 10 minutes*** ~$ gsutil signurl -d 10m -m GET /path/private_key.json gs://bucketname>/img/*.png*
 
 
 ***rsync - automatic backup*** ~$ gsutil rsync source folder target folder
+
 ***rsync - local folder with storage bucket*** ~$ gsutil -m rsync -r -d ./myfolder gs://bucketname
 
 If you don’t want to have to run the gsutil command every time you make a change in the source folder, you can set up a cron job on your local with crontab -e or the equivalent for windows machines. For instance the following cron job will backup your local folder to Google Cloud every 15mn.
