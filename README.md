@@ -64,14 +64,13 @@ If you don’t want to have to run the gsutil command every time you make a chan
 ***Lifecycle using json file*** ~$ gsutil lifecycle set config_file.json gs://bucket_name
 <br />
 The following lifecycle management configuration JSON document specifies that all objects in this bucket that are more than 365 days old are deleted automatically:
-
-
-{
-  "rule":
-  [
+<br />
     {
-      "action": {"type": "Delete"},
-      "condition": {"age": 365}
+      "rule":
+      [
+        {
+          "action": {"type": "Delete"},
+           "condition": {"age": 365}
+        }
+      ]
     }
-  ]
-}
