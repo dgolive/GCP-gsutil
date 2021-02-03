@@ -34,6 +34,11 @@ Is the command line tool used to manage buckets and objects on Google Storage.
 <br />
 <br />
 <br />
+
+***To make the file public*** gsutil acl ch -u allUsers:r gs://whizlabs-bucket/file.pdf
+<br />
+<br />
+
 ***Uniform Bucket-Level Access - Enabling*** ~$ gsutil mb -b on gs://bucket-with-no-acls
 
 ***Uniform Bucket-Level Access - Disabling***   $ gsutil mb -b off gs://bucket-with-acls
