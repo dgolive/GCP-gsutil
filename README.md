@@ -12,6 +12,8 @@ Is the command line tool used to manage buckets and objects on Google Storage.
 
 ***List all buckets and files*** ~$ gsutil ls -lh gs://bucket-name 
 
+***Get information about the file*** ~$ gsutil ls -L gs://bucket-name/testfile.txt 
+
 ***Copy file (download)*** ~$ gsutil cp gs://bucket-name/dir-path/package-1.1.tgz .
 
 ***Copy file (upload)*** ~$ gsutil cp filename gs://bucket-name/directory/
